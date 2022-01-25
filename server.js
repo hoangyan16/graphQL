@@ -18,6 +18,7 @@ async function startApolloServer(){
   const server= new ApolloServer({
     schema
   });
+  // HAHAHAHAHA
   await server.start();
   server.applyMiddleware({app,path:'/graphql'})
   // Khởi tạo server tại port 4000
